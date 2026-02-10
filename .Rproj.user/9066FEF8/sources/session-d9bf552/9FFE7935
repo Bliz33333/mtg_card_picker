@@ -1,0 +1,27 @@
+{
+    "id": "9FFE7935",
+    "path": "~/R Workspace/mtg_card_picker/test.R",
+    "project_path": "test.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1769209648679.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "9,25",
+        "scrollLine": "0"
+    },
+    "folds": "51|8|88|0|\n",
+    "lastKnownWriteTime": 1770276423,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1770276423757,
+    "read_only": false,
+    "read_only_alternatives": []
+}

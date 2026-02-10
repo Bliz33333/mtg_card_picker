@@ -1,0 +1,27 @@
+{
+    "id": "A45C0726",
+    "path": "~/R Workspace/mtg_card_picker/functions.R",
+    "project_path": "functions.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1769483194490.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "158,0",
+        "scrollLine": "133"
+    },
+    "folds": "1|1|44|0|\n",
+    "lastKnownWriteTime": 1770277567,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1770277567718,
+    "read_only": false,
+    "read_only_alternatives": []
+}
