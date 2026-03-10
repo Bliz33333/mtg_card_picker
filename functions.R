@@ -121,7 +121,7 @@ legal_filter <- function(data)
 slice_pack <- function(data, common = 0, uncommon = 0, rare = 0, mythic = 0, random = 0, set = "")
 {
   
-  if(set_id != "")
+  if(set != "")
   {
     data <-
       data %>% 
@@ -152,7 +152,7 @@ slice_pack <- function(data, common = 0, uncommon = 0, rare = 0, mythic = 0, ran
     data %>% 
     slice_sample(n=random)
   
-  rbind(common, uncommon, rare, mythic, random) %>% 
+  rbind(common_cards, uncommon_cards, rare_cards, mythic_cards, random_cards) %>% 
     return()
 }
 
@@ -176,4 +176,31 @@ clean_display <- function(my_names)
   my_names[1] <- paste('\n\n',my_names[1],sep='')
   print(paste(my_names, collapse = '\n') %>% cat())
   # return(names)
+}
+
+rarity_rank_filter(data, prop = 0.5)
+{
+  common_cards <-
+    data %>% 
+    filter(rarity == "common") 
+  
+  common_cutoff <-
+    common_cards %>% 
+    quantile()
+  
+  uncommon_cards <-
+    data %>% 
+    filter(rarity == "uncommon") 
+  
+  rare_cards <-
+    data %>% 
+    filter(rarity == "rare") 
+  
+  mythic_cards <-
+    data %>% 
+    filter(rarity == "mythic") 
+  
+  
+  rbind(common_cards, uncommon_cards, rare_cards, mythic_cards, random_cards) %>% 
+    return()
 }
