@@ -1,11 +1,13 @@
 library(pacman)
-p_load(tidyverse, jsonlite)
+p_load(tidyverse, jsonlite, lubridate)
 
 data <-
   read_json("./data/oracle-cards.json",TRUE) %>% 
   type_line_parse()
 
 data$legalities <- as.data.frame(data$legalities == "legal")
+
+set.seed(as.numeric(Sys.time()))
 
 
 # Shop ----

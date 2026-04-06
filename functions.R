@@ -178,7 +178,7 @@ clean_display <- function(my_names)
   # return(names)
 }
 
-rarity_rank_filter(data, prop = 0.5)
+rarity_rank_filter<- function(data, prop = 0.5)
 {
   common_cards <-
     data %>% 
